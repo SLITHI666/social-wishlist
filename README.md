@@ -1,36 +1,53 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+🎁 WishLink — AI-Powered Social Wishlist
+WishLink — это не просто список покупок. Это современная социальная платформа для управления желаниями, созданная с фокусом на пользовательский опыт, сюрпризы и командную работу.
 
-## Getting Started
+Живое Демо →
 
-First, run the development server:
+🚀 Ключевые фишки (Features)
+🤖 AI Gift Assistant: Интеграция с Google Gemini 2.5 Flash для генерации идей подарков на основе интересов.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+⚡️ Realtime Sync: Мгновенное обновление статусов бронирования и вкладов без перезагрузки страницы (через Supabase Realtime).
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+💰 Social Crowdfunding: Возможность «скинуться» на дорогие подарки с визуальным прогресс-баром.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+🕵️ Surprise Mode: Владелец списка видит прогресс, но не знает, кто забронировал подарок или внес вклад — магия сюрприза сохранена!
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+🌍 Bilingual UI: Полная поддержка английского (по умолчанию) и русского языков.
 
-## Learn More
+🎨 Smart UX: Автоматическая генерация стильных градиентов для товаров без фото и быстрый поиск на Яндекс.Маркете.
 
-To learn more about Next.js, take a look at the following resources:
+📱 Fully Adaptive: Идеально работает на смартфонах и десктопах.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+🧠 Продуктовые решения (Product Thinking)
+При разработке я не просто писал код, а решал «боли» пользователя:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Проблема брошенных корзин: Друзьям не нужно регистрироваться, чтобы забронировать подарок. Я использую Guest ID в браузере, чтобы система узнавала их.
 
-## Deploy on Vercel
+Эстетика: Если у товара нет картинки, приложение не показывает «битую» иконку, а генерирует уникальный градиент на основе названия.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Edge Case (Прошедшие события): Если дата события прошла, список автоматически переходит в режим Archive, блокируя новые вносы средств.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+🛠 Технологический стек (Tech Stack)
+Frontend: Next.js 14 (App Router), TypeScript, Tailwind CSS.
+
+UI Components: Shadcn/UI, Lucide Icons.
+
+Backend & DB: Supabase (PostgreSQL + Realtime Engine).
+
+AI: Google Gemini API.
+
+Deployment: Vercel.
+
+⚙️ Настройка (Environment Variables)
+Чтобы запустить проект локально, создайте файл .env.local и добавьте:
+
+Фрагмент кода
+
+NEXT_PUBLIC_SUPABASE_URL=your_url
+NEXT_PUBLIC_SUPABASE_ANON_KEY=your_key
+GEMINI_API_KEY=your_gemini_key
+🎬 Видео процесса
+Посмотреть, как я использовал AI-инструменты (Cursor/Gemini) для ускорения разработки, можно здесь:
+Ссылка на видео →
+
+Developed with ❤️ as a test task for Robert.
