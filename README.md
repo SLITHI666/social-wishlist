@@ -47,8 +47,4 @@ NEXT_PUBLIC_SUPABASE_URL=your_url
 NEXT_PUBLIC_SUPABASE_ANON_KEY=your_key
 GEMINI_API_KEY=your_gemini_key
 
-🎬 Видео процесса
-Посмотреть, как я использовал AI-инструменты (Cursor/Gemini) для ускорения разработки, можно здесь:
-Ссылка на видео →
-
 Developed with ❤️ as a test task for Robert.
